@@ -12,7 +12,7 @@
 			<h1>Cerca sillabe</h1>
 			<form method="POST">
 				<div class="mb-3">
-					<label class="form-label">Sillaba</label>
+					<label class="form-label">Inserisci la <strong>sillaba</strong> che vuoi cercare</label>
 					<input type="text" class="form-control" name="sillaba">
 				</div>
 				<button type="submit" class="btn btn-primary">Cerca</button>
