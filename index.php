@@ -25,10 +25,12 @@
 				preg_match_all('/([\r\n]'.$sillaba.'-[^\r\n]+|[^\r\n]+-'.$sillaba.'-[^\r\n]+|[^\r\n]+-'.$sillaba.'[\r\n])/',$words,$out);
 				//print_r($out);
 				if(isset($out[0]) && count($out[0])>0){
+					echo '<h3 class="mt-5">'.count($out[0]).' parole trovate</h3>';
 					echo '<table class="table table-striped">';
 					foreach($out[0] as $word) echo '<tr><td>'.$word.'</td></tr>';
 					echo '</table>';
 				}else{
+					echo '<h3 class="mt-5">0 parole trovate</h3>';
 					echo '<p>Nessuna parola trovata. Inserisci una parola</p>
 					<form method="POST">
 						<div class="mb-3">
