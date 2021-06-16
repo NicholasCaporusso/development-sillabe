@@ -19,7 +19,6 @@
 			</form>
 		<?php
 			if(isset($_POST['sillaba'][0])){
-				echo '<h3 class="mt-5">Parole</h3>';
 				$sillaba=trim($_POST['sillaba']);
 				$words=str_replace('<?php die()?>','',file_get_contents('sillabe.txt.php'));
 				preg_match_all('/([\r\n]'.$sillaba.'-[^\r\n]+|[^\r\n]+-'.$sillaba.'-[^\r\n]+|[^\r\n]+-'.$sillaba.'[\r\n])/',$words,$out);
